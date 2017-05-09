@@ -10,5 +10,7 @@ RUN apt-get update \
 
 ADD entrypoint.sh /entrypoint.sh
 
+WORKDIR /workspace
+
 ENTRYPOINT ["/entrypoint.sh"]
 
