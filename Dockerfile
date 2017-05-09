@@ -12,5 +12,7 @@ ADD entrypoint.sh /entrypoint.sh
 
 WORKDIR /workspace
 
+ENV INSIDE_CONTAINER=1
+
 ENTRYPOINT ["/entrypoint.sh"]
 
