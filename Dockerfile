@@ -8,11 +8,6 @@ RUN apt-get update \
 	&& apt-get update \
 	&& apt-get install -y docker-ce
 
-ADD entrypoint.sh /entrypoint.sh
-
-WORKDIR /workspace
-
 ENV INSIDE_CONTAINER=1
 
-ENTRYPOINT ["/entrypoint.sh"]
 
