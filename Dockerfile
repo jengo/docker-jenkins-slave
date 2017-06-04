@@ -12,7 +12,7 @@ RUN apk update \
 	&& rm google-cloud-sdk.tar.gz \
 	&& ./google-cloud-sdk/install.sh --usage-reporting=true --path-update=true -q \
 	&& ln -s /usr/local/google-cloud-sdk/bin /usr/bin \
-	&& gcloud components install -q kubectl
+	&& /usr/local/google-cloud-sdk/bin/gcloud components install -q kubectl
 
 ENV INSIDE_CONTAINER=1
 
